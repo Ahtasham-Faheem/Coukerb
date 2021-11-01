@@ -1,0 +1,188 @@
+@font-face {
+  font-family: opensans;
+  src: url(/font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-family: opensans;
+}
+
+.main-container .inner-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main-container header .header-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 650px 1fr;
+      grid-template-columns: 650px 1fr;
+  margin-bottom: 20px;
+}
+
+.main-container header .header-logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-container header .header-logo .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 256px 32px;
+      grid-template-columns: 256px 32px;
+  grid-gap: 16px;
+}
+
+.main-container header .header-logo .contact a {
+  font-size: 25px;
+  position: relative;
+  bottom: -3px;
+}
+
+.main-container header .header-logo .contact .header-phone {
+  text-align: end;
+}
+
+.main-container header .header-logo .contact .header-phone a {
+  font-size: 20px;
+  color: #a01d20;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-container header .header-logo .contact .header-phone p {
+  font-size: 20px;
+}
+
+.main-container .header-menu {
+  background-color: #e2e4e4;
+  height: 60px;
+  line-height: 60px;
+}
+
+.main-container .header-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main-container .header-menu ul a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main-container .content-box {
+  background: url(/images/header-pic_03.png);
+  height: 395px;
+  background-size: cover;
+  position: relative;
+}
+
+.main-container .content-box .inner-container .banner {
+  position: absolute;
+  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+
+.main-container .content-box .inner-container .banner .box-1 {
+  height: 285px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.main-container .content-box .inner-container .banner .box-1 .content-1 {
+  padding: 40px;
+}
+
+.main-container .content-box .inner-container .banner .box-1 .content-1 h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.main-container .content-box .inner-container .banner .box-1 .content-1 p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main-container .content-box .inner-container .banner .box-1 a {
+  background-color: #941519;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 116px 15px 42px;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-container .content-box .inner-container .banner .box-1 a img {
+  margin-right: 10px;
+}
+
+.main-container .content-box .inner-container .banner .box-2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 255px;
+  border-bottom: 10px solid #941519;
+  position: relative;
+  bottom: -20px;
+}
+
+.main-container .content-box .inner-container .banner .box-2 .content-2 {
+  padding: 40px;
+}
+
+.main-container .content-box .inner-container .banner .box-2 .content-2 h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.main-container .content-box .inner-container .banner .box-2 .content-2 p {
+  line-height: 26px;
+}
+
+.main-container .content-box .inner-container .banner .box-3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 255px;
+  border-bottom: 10px solid #941519;
+  position: relative;
+  bottom: -20px;
+}
+
+.main-container .content-box .inner-container .banner .box-3 .content-3 {
+  padding: 40px;
+}
+
+.main-container .content-box .inner-container .banner .box-3 .content-3 h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.main-container .content-box .inner-container .banner .box-3 .content-3 p {
+  line-height: 26px;
+}
+
+.main-container .middle-container {
+  background: url(/images/middle-pic_03.png);
+  background-size: cover;
+  height: 561px;
+  margin-top: 40px;
+}
+
+.main-container .middle-container .middle-title span {
+  color: #941519;
+}
+/*# sourceMappingURL=style.css.map */
