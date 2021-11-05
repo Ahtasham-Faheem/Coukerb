@@ -24,8 +24,8 @@ body,
 .main-container header .header-logo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 650px 1fr;
-      grid-template-columns: 650px 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   margin-bottom: 20px;
 }
 
@@ -41,6 +41,8 @@ body,
   -ms-grid-columns: 256px 32px;
       grid-template-columns: 256px 32px;
   grid-gap: 16px;
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 .main-container header .header-logo .contact a {
@@ -79,6 +81,11 @@ body,
   color: black;
   font-size: 20px;
   text-decoration: none;
+  display: block;
+}
+
+.main-container .header-menu ul a:hover {
+  color: #a01d21;
 }
 
 .main-container .content-box {
@@ -93,8 +100,8 @@ body,
   bottom: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 319px 319px 319px;
-      grid-template-columns: 319px 319px 319px;
+  -ms-grid-columns: 322px 322px 322px;
+      grid-template-columns: 322px 322px 322px;
   color: white;
 }
 
@@ -104,19 +111,16 @@ body,
   position: relative;
 }
 
-.main-container .content-box .inner-container .banner .box-1 .content-1 {
-  padding: 40px;
-}
-
 .main-container .content-box .inner-container .banner .box-1 .content-1 h2 {
   font-weight: 700;
-  margin-bottom: 30px;
   font-size: 20px;
+  padding: 40px;
 }
 
 .main-container .content-box .inner-container .banner .box-1 .content-1 p {
   font-size: 16px;
   line-height: 26px;
+  padding: 0 40px 40px 40px;
 }
 
 .main-container .content-box .inner-container .banner .box-1 a {
@@ -124,7 +128,7 @@ body,
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 15px 116px 15px 33px;
+  padding: 15px 112px 15px 40px;
   position: absolute;
   bottom: 0;
 }
@@ -201,16 +205,22 @@ body,
   color: white;
 }
 
+.main-container .middle-container .middle-content .left-content {
+  color: #999999;
+}
+
 .main-container .middle-container .middle-content .left-content p {
   margin-bottom: 35px;
   line-height: 28px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .main-container .middle-container .middle-content .left-content .left-p {
   margin-bottom: 35px;
   line-height: 26px;
-  font-size: 17px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .main-container .middle-container .middle-content .right-content h3 {
@@ -224,23 +234,38 @@ body,
 .main-container .middle-container .middle-content .right-content ul li {
   list-style: none;
   line-height: 35px;
-}
-
-.main-container .middle-container .middle-content .right-content ul li img {
-  margin-right: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 15px;
 }
 
 .main-container .middle-container .middle-content .right-content ul li a {
   text-decoration: none;
-  color: #ee343a;
+  color: #9e1c20;
   font-size: 18px;
   font-weight: 700;
+}
+
+.main-container .middle-container .middle-content .right-content ul li a:hover {
+  color: #6d7172;
+}
+
+.main-container .middle-container .middle-content .right-content ul li .last-li {
+  line-height: 10px;
+}
+
+.main-container .middle-container .middle-content .right-content ul img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .main-container .middle-container .middle-content .right-content .gallery {
   color: white;
   background-color: #9e1c20;
-  padding: 15px 50px;
+  padding: 15px 80px 15px 20px;
   text-decoration: none;
   line-height: 30px;
 }
@@ -250,7 +275,6 @@ body,
 }
 
 .main-container .register-form {
-  height: 330px;
   background-color: #6d7172;
   padding: 52px 0;
 }
@@ -258,24 +282,28 @@ body,
 .main-container .register-form .form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 295px 1fr;
-      grid-template-columns: 295px 1fr;
-  grid-gap: 40px;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 55px;
 }
 
 .main-container .register-form .form .left-form {
   color: white;
 }
 
-.main-container .register-form .form .left-form h3 {
+.main-container .register-form .form .left-form h2 {
   font-weight: 700;
   margin-bottom: 40px;
   font-size: 20px;
+  display: inline-block;
 }
 
-.main-container .register-form .form .left-form h3 span {
-  color: #941519;
+.main-container .register-form .form .left-form #red-p {
   font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 20px;
+  display: inline-block;
+  color: #9c1a1e;
 }
 
 .main-container .register-form .form .left-form p {
@@ -287,5 +315,145 @@ body,
 .main-container .register-form .form .left-form .phone-no {
   font-size: 28px;
   color: white;
+}
+
+.main-container .register-form .form .right-form form .double-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main-container .register-form .form .right-form form .double-form input {
+  height: 35px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+}
+
+.main-container .register-form .form .right-form form .double-form input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .double-form input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .double-form input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .double-form input::placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .email {
+  margin-bottom: 20px;
+}
+
+.main-container .register-form .form .right-form form .email input {
+  height: 35px;
+  border-radius: 8px;
+  width: 610px;
+  outline: none;
+  margin-bottom: 10px;
+  border: none;
+  padding: 0 15px;
+}
+
+.main-container .register-form .form .right-form form .email input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .email input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .email input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .email input::placeholder {
+  font-style: italic;
+}
+
+.main-container .register-form .form .right-form form .email #help {
+  height: 65px;
+}
+
+.main-container .register-form .form .submit-email {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 175px;
+      grid-template-columns: 1fr 175px;
+}
+
+.main-container .register-form .form .submit-email p {
+  font-size: 14px;
+  text-align: center;
+  color: #b3b4b4;
+  line-height: 62px;
+}
+
+.main-container .register-form .form .submit-email a {
+  text-decoration: none;
+  color: white;
+  background-color: #9c1a1e;
+  padding: 0 23px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-container footer .inner-container .footer-grid {
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr 1fr;
+      grid-template-columns: auto 1fr 1fr;
+}
+
+.main-container footer .inner-container .footer-grid ul {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-container footer .inner-container .footer-grid ul li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.main-container footer .inner-container .footer-grid ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+.main-container footer .inner-container .footer-grid ul li a:hover {
+  color: #a01d21;
+}
+
+.main-container footer .inner-container .footer-grid ul li .red-b {
+  color: #9c1a1e;
+}
+
+.main-container footer .inner-container .footer-grid p {
+  font-size: 12px;
+  color: #b3b4b4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.main-container footer .inner-container .footer-grid img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 /*# sourceMappingURL=style.css.map */
